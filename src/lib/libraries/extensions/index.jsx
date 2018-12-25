@@ -16,6 +16,8 @@ import text2speechImage from './text2speech.png';
 import text2speechInsetImage from './text2speech-small.svg';
 import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
+import newblocksImage from './newblocks.png'
+import newblocksInsetImage from './newblocks-small.png'
 
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
@@ -26,6 +28,26 @@ import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="New Blocks"
+                description="Name for the 'New Blocks' extension"
+                id="gui.extension.newblocks.name"
+            />
+        ),
+        extensionId: 'newblocks',
+        iconURL: newblocksImage,
+        insetIconURL: newblocksInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="New extension"
+                description="Description for the 'New Blocks' extension"
+                id="gui.extension.newblocks.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
